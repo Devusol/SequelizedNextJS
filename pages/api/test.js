@@ -1,5 +1,3 @@
-import Sequelize from "sequelize"
-// import { sqlDB } from "../../database/db"
 import Users from "../../database/Models/Users"
 
 export default async function handler(req, res) {
