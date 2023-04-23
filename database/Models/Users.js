@@ -15,7 +15,7 @@ const Users = db.define('Users', {
     }
 })
 
-Users.sync({ force: true })
+Users.sync({ force: false })
     .then((result) => {
         console.log(result, "synchronized");
     })

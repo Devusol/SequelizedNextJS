@@ -1,8 +1,10 @@
 import Sequelize from 'sequelize';
 
-module.exports = new Sequelize(process.env.DB_NAME, process.env.DB_USER, process.env.DB_PWD, {
-    host: process.env.DB_URL,
-    dialect: 'mysql',
+// module.exports = new Sequelize(process.env.DB_NAME, process.env.DB_USER, process.env.DB_PWD, {
+//     host: process.env.DB_URL,
+module.exports = new Sequelize(process.env.DB_URI, {
+    //  host: process.env.DB_URL,
+    //    dialect: 'mysql',
     pool: {
         max: 10,
         min: 0,
